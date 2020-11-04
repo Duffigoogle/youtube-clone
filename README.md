@@ -13,4 +13,8 @@
   - Go to https://console.firebase.google.com
   - Click **Add Project** or **Create a Project**.
   - Enter a project name.
-  - Opt out to include Google Analytics in the project.
+  - You could opt out to include Google Analytics in the project.
+  - Once setup is done... you will be redirected to the dashboard. Go to **Project Settings.**
+  - Under **Your Apps**, select the **Web** icon.
+  - Enter a name for the app and click **Register App.**
+  - Copy the config details that come under the firebaseConfig.
