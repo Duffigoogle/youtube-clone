@@ -22,3 +22,7 @@
   - Add Firebase to the Youtube-clone-app using `<npm install --save firebase>` or `<npm install -g firebase>` or `<yarn add firebase>`
   - Inside the `<src>` directory, create a new directory `<Firebase>` and further, create a `<firebaseconfig.js>` file and paste the config details copied from Firebase Web app 
     setup.
+- Create Scafold of Main Components.
+  -  `<Header>`
+  -  `<SideBar>`
+  -  `<VideoGallery>`
