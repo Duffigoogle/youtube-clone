@@ -5,3 +5,20 @@
 ### Using **Reactjs** and **Material UI** for the frontend development.
 
 #### With **Firebase**, the Youtube-clone app will be hosted.
+
+
+**Order of development.**
+- React Application setup: `<npx create-react-app youtube-clone>`.
+- Setup Firebase hosting.
+  - Go to https://console.firebase.google.com
+  - Click **Add Project** or **Create a Project**.
+  - Enter a project name.
+  - You could opt out to include Google Analytics in the project.
+  - Once setup is done... you will be redirected to the dashboard. Go to **Project Settings.**
+  - Under **Your Apps**, select the **Web** icon.
+  - Enter a name for the app and click **Register App.**
+  - Copy the config details that come under the `<firebaseConfig>` variable. This will be used to setup communication between the **Youtube-clone-app** and **Firebase**.
+  - Click **Continue to Console** to complete the web app registration.
+  - Add Firebase to the Youtube-clone-app using `<npm install --save firebase>` or `<npm install -g firebase>` or `<yarn add firebase>`
+  - Inside the `<src>` directory, create a new directory `<Firebase>` and further, create a `<firebaseconfig.js>` file and paste the config details copied from Firebase Web app 
+    setup.
