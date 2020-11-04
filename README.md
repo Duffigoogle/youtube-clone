@@ -17,4 +17,4 @@
   - Once setup is done... you will be redirected to the dashboard. Go to **Project Settings.**
   - Under **Your Apps**, select the **Web** icon.
   - Enter a name for the app and click **Register App.**
-  - Copy the config details that come under the firebaseConfig.
+  - Copy the config details that come under the `<firebaseConfig>`.
