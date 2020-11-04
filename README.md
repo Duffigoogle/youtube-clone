@@ -8,7 +8,7 @@
 
 
 **Order of development.**
-- React Application setup: npx create-react-app youtube-clone.
+- React Application setup: `<npx create-react-app youtube-clone>`.
 - Setup Firebase hosting.
   - Go to https://console.firebase.google.com
   - Click **Add Project** or **Create a Project**.
@@ -17,4 +17,5 @@
   - Once setup is done... you will be redirected to the dashboard. Go to **Project Settings.**
   - Under **Your Apps**, select the **Web** icon.
   - Enter a name for the app and click **Register App.**
-  - Copy the config details that come under the `<firebaseConfig>`.
+  - Copy the config details that come under the `<firebaseConfig>` variable. This will be used to setup communication between the **Youtube-clone-app** and **Firebase**.
+  - Click **Continue to Console** to complete the web app registration.
