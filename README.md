@@ -23,9 +23,17 @@
   - Inside the `<src>` directory, create a new directory `<Firebase>` and further, create a `<firebaseconfig.js>` file and paste the config details copied from Firebase Web app
     setup.
 - Install the other required dependencies for the Youtube- clone-app.
-  - install **Material UI** via your terminal/Gitbash <npx i --save @material-ui/core>. Check documentations on https://www.material-ui.com
-  - Install **axios** via <npx i --save axios>
+  - install **Material UI** via your terminal/Gitbash `<npx i --save @material-ui/core>`. Check documentations on https://www.material-ui.com
+  - Install **axios** via `<npx i --save axios>`
 - Create Scafold of Main Components.
   - `<Header>`
+    - `<LogoMenu>`
+    - `<Search>`
+    - `<RightMenu>`
+      - `<Icons>`
+      - `<SignIn>`
   - `<SideBar>`
+    - `<MainSideMenu>`
+    - `<LibHistoryMenu>`
+    - `<BestOfYoutube>`
   - `<VideoGallery>`
