@@ -25,7 +25,7 @@
 - Install the other required dependencies for the Youtube- clone-app.
   - install **Material UI** via your terminal/Gitbash `<npx i --save @material-ui/core>`. Check documentations on https://www.material-ui.com
   - Install **axios** via `<npx i --save axios>`
-- Create Scafold of Main Components.
+- Create Scaffold of Main and Children Components.
   - `<Header>`
     - `<LogoMenu>`
     - `<Search>`
@@ -34,6 +34,19 @@
       - `<SignIn>`
   - `<SideBar>`
     - `<MainSideMenu>`
-    - `<LibHistoryMenu>`
+      - `<HomeTrendSubscrip>`
+      - `<LibHistoryMenu>`
+      - `<SignInComp>`
     - `<BestOfYoutube>`
-  - `<VideoGallery>`
+      - `<YoutubeGenre>`
+      - `<BrowseChannels>`
+    - `<MoreFromYoutube>`
+      - `<PremiumLive>`
+      - `<SettingsHelpFeedback>`
+      - `<Footer>`
+  - `<MainGallery>`
+    - `<TagsComp>`
+    - `<VideoGallery>`
+      - `<Trending>`
+      - `<Covid-19>`
+      - `<RandomVideos>`
