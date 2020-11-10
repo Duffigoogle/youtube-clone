@@ -1,4 +1,15 @@
-# Youtube-clone
+<h1 align="center"> Youtube-clone </h1>
+
+<p align="center">
+  <img src="https://img.shields.io/github/issues/Duffigoogle">
+  <img src="https://img.shields.io/github/forks/Duffigoogle">
+  <img src="https://img.shields.io/github/stars/Duffigoogle">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/github/licensed/duffigoogle/youtube-clone?color=%236633cc&logo=mit alt="License">
+  </a>
+</p>
+                                                                                                                     
+<hr>                                                                                                                
 
 ![Youtube logo](https://www.youtube.com/img/desktop/yt_1200.png)
 
