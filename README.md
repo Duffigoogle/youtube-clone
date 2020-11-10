@@ -26,7 +26,7 @@
   - install **Material UI** via your terminal/Gitbash `<npx i --save @material-ui/core>`. Check documentations on https://www.material-ui.com
   - Install **axios** via `<npx i --save axios>`
 - Create Scaffold of Main and Children Components.
-  - `<Header>`
+  - `<TopBar>`
     - `<LogoMenu>`
     - `<Search>`
     - `<RightMenu>`
