@@ -1,6 +1,19 @@
 import React, { useState } from 'react';
 
+const SEARCH_BUTTON_EDGE = 35;
 
+const searchFieldButtonStyle = {
+    height: SEARCH_BUTTON_EDGE - 2, // reduces 2px because of top and bottom border
+    width: SEARCH_BUTTON_EDGE - 2,
+    outline: 'none',
+    backgroundColor: 'white',
+    cursor: 'pointer',
+    padding: 5,
+    boxSizing: 'border-box',
+    appearance: 'none',
+    border: 'none',
+    borderLeft: '1px #ddd solid',
+  };
 
 function TopBarSearch({ onSubmit }) {
 
@@ -19,9 +32,11 @@ function TopBarSearch({ onSubmit }) {
             onSubmit(SearchTerm);
         };
     }
+
+    const onSearchClick
     return (
         <div>
-            <SearchForm onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <input
                     placeholder="Search"
                     name="search"
@@ -29,7 +44,15 @@ function TopBarSearch({ onSubmit }) {
                     onChange={onInputChange}
                     onKeyPress={onKeyPress}
                 />
-            </SearchForm>
+            </form>
+            <button 
+                className='' 
+                type='button' 
+                onClick={onSearchClick}
+                style={searchFieldButtonStyle}
+            >
+                <SearchIcon />
+            </button>
         </div>
     )
 }
