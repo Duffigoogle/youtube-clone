@@ -2,8 +2,8 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div>
-            <div>
+        <div className='footer'>
+            <div className='top-footer'>
                 <ul>
                     <li>About</li>
                     <li>Press</li>
@@ -14,7 +14,7 @@ function Footer() {
                     <li>Developers</li>
                 </ul>
             </div>
-            <div>
+            <div className='mid-footer'>
                 <ul>
                     <li>Terms</li>
                     <li>Privacy</li>
@@ -23,7 +23,7 @@ function Footer() {
                     <li>Test new features</li>
                 </ul>
             </div>
-            <div>
+            <div className='bottom-footer'>
                 <h3>&copy; 2020 Google LLC</h3>
             </div>
         </div>
