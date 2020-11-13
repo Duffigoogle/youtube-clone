@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { Search as SearchIcon } from '@material-ui/icons';
 
-const SEARCH_BUTTON_EDGE = 35;
+const SEARCH_BUTTON_EDGE = 60;
 
 const searchFieldButtonStyle = {
-    height: SEARCH_BUTTON_EDGE - 2, // reduces 2px because of top and bottom border
+    height: SEARCH_BUTTON_EDGE - 25, // reduces 2px because of top and bottom border
     width: SEARCH_BUTTON_EDGE - 2,
     outline: 'none',
     backgroundColor: 'white',
@@ -15,13 +16,25 @@ const searchFieldButtonStyle = {
     borderLeft: '1px #ddd solid',
   };
 
+const searchFieldInputStyle = {
+    height: SEARCH_BUTTON_EDGE - 25,
+    width: SEARCH_BUTTON_EDGE + 10,
+    outline: 'none',
+    border: 'none',
+    fontSize: 14,
+    padding: 10,
+    flex: 1,
+    fontWeight: 100,
+    color: '#5a5a5a',
+}
+
 function TopBarSearch({ onSubmit }) {
 
     const [SearchTerm, setSearchTerm] = useState("");
 
     function handleSubmit(event) {
         event.preventDefault();
-        formSubmit(SearchTerm);
+        // formSubmit(SearchTerm);
         setSearchTerm("")
     }
 
@@ -33,9 +46,10 @@ function TopBarSearch({ onSubmit }) {
         };
     }
 
-    const onSearchClick
+   
+
     return (
-        <div>
+        <div className='searchFieldStyle'>
             <form onSubmit={handleSubmit}>
                 <input
                     placeholder="Search"
@@ -43,16 +57,18 @@ function TopBarSearch({ onSubmit }) {
                     value={SearchTerm}
                     onChange={onInputChange}
                     onKeyPress={onKeyPress}
+                    style={searchFieldInputStyle}
                 />
-            </form>
-            <button 
+                <button 
                 className='' 
                 type='button' 
-                onClick={onSearchClick}
+                // onClick={onSearchClick}
                 style={searchFieldButtonStyle}
-            >
-                <SearchIcon />
-            </button>
+                >
+                    <SearchIcon />
+                </button>
+            </form>
+            
         </div>
     )
 }
