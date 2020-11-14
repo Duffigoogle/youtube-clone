@@ -9,7 +9,7 @@
   </a>
 </p>
                                                                                                                      
-<hr>                                                                                                                
+<hr>
 
 ![Youtube logo](https://www.youtube.com/img/desktop/yt_1200.png)
 
@@ -36,10 +36,12 @@
 - Install the other required dependencies for the Youtube- clone-app.
   - install **Material UI** via your terminal/Gitbash `<npx i --save @material-ui/core>`. Check documentations on https://www.material-ui.com
   - Install **axios** via `<npx i --save axios>`
+  - Install **react-icons** via ``<npm install react-icons>`
+  - Install **semantic-ui-react** via `<npm install semantic-ui-react semantic-ui-css>`
 - Create Scaffold of Main and Children Components.
   - `<TopBar>`
     - `<LogoMenu>`
-    - `<Search>`
+    - `<TopBarSearch>`
     - `<RightMenu>`
       - `<Icons>`
       - `<SignIn>`
@@ -61,6 +63,7 @@
       - `<Trending>`
       - `<Covid-19>`
       - `<RandomVideos>`
+
 ## Getting a Youtube Data API key
 
 1. Head over to the [Google developers console](https://console.developers.google.com)
