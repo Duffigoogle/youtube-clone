@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Search as SearchIcon } from '@material-ui/icons';
+import './topbar.scss';
 
 const SEARCH_BUTTON_EDGE = 60;
 
 const searchFieldButtonStyle = {
     height: SEARCH_BUTTON_EDGE - 25, // reduces 2px because of top and bottom border
-    width: SEARCH_BUTTON_EDGE - 2,
+    width: 75,
     outline: 'none',
-    backgroundColor: 'white',
+    backgroundColor: '#f8f8f8',
     cursor: 'pointer',
     padding: 5,
     boxSizing: 'border-box',
@@ -18,9 +19,9 @@ const searchFieldButtonStyle = {
 
 const searchFieldInputStyle = {
     height: SEARCH_BUTTON_EDGE - 25,
-    width: SEARCH_BUTTON_EDGE + 10,
+    width: 'SEARCH_BUTTON_EDGE + 280',
     outline: 'none',
-    border: 'none',
+    border: '1px solid black',
     fontSize: 14,
     padding: 10,
     flex: 1,
@@ -28,14 +29,20 @@ const searchFieldInputStyle = {
     color: '#5a5a5a',
 }
 
-function TopBarSearch({ onSubmit }) {
+const icons = {
+        height: '24px',
+        width: '24px',
+}
+
+function TopSearchBar({ onSubmit }) {
 
     const [SearchTerm, setSearchTerm] = useState("");
 
     function handleSubmit(event) {
-        event.preventDefault();
-        // formSubmit(SearchTerm);
+        const { formSubmit } = this.props;
+        formSubmit(SearchTerm);
         setSearchTerm("")
+        event.preventDefault();
     }
 
     const onInputChange = (event) => setSearchTerm(event.target.value);
@@ -50,7 +57,7 @@ function TopBarSearch({ onSubmit }) {
 
     return (
         <div className='searchFieldStyle'>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='search_form'>
                 <input
                     placeholder="Search"
                     name="search"
@@ -60,12 +67,12 @@ function TopBarSearch({ onSubmit }) {
                     style={searchFieldInputStyle}
                 />
                 <button 
-                className='' 
+                className='search_button' 
                 type='button' 
                 // onClick={onSearchClick}
                 style={searchFieldButtonStyle}
                 >
-                    <SearchIcon />
+                    <SearchIcon style={icons} />
                 </button>
             </form>
             
@@ -73,4 +80,4 @@ function TopBarSearch({ onSubmit }) {
     )
 }
 
-export default TopBarSearch
+export default TopSearchBar
