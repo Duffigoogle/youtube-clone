@@ -37,12 +37,12 @@
   - Install **react-sass** via ``<npm install node-sass>`
   - install **Material UI** via your terminal/Gitbash `<npx i --save @material-ui/core>`. Check documentations on https://www.material-ui.com
   - Install **axios** via `<npx i --save axios>`
-  - Install **react-icons** via ``<npm install react-icons>`
+  - Install **react-icons** via `<npm install react-icons>`
   - Install **semantic-ui-react** via `<npm install semantic-ui-react semantic-ui-css>`
 - Create Scaffold of Main and Children Components.
   - `<TopBar>`
     - `<LogoMenu>`
-    - `<TopBarSearch>`
+    - `<TopSearchBar>`
     - `<RightMenu>`
       - `<Icons>`
       - `<SignIn>`
