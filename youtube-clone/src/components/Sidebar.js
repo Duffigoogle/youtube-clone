@@ -1,12 +1,15 @@
 import React from 'react';
-import PrimarySide from './PrimarySide';
-import SecondarySide from './SecondarySide';
+import PrimarySideBar from './PrimarySideBar';
+import SecondarySideBar from './SecondarySideBar';
+import TertiarySideBar from './TertiarySideBar';
+import './sidebar.scss';
 
 function Sidebar() {
     return (
-        <div>
-            <PrimarySide />
-            <SecondarySide />
+        <div className='sidebar'>
+            <PrimarySideBar />
+            <SecondarySideBar />
+            <TertiarySideBar />
         </div>
     )
 }

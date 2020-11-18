@@ -1,11 +1,12 @@
 import React from 'react';
 import SideBarSection from './SideBarSection';
-import HomeIcon from '@material-ui/icons/Home';
+// import HomeIcon from '@material-ui/icons/Home';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import SettingsIcon from '@material-ui/icons/Settings';
 import FlagIcon from '@material-ui/icons/Flag';
 import HelpIcon from '@material-ui/icons/Help';
 import AnnouncementIcon from '@material-ui/icons/Announcement';
+import WhatshotIcon from '@material-ui/icons/Whatshot';
 import Footer from './Footer';
 
 

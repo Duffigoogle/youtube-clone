@@ -8,7 +8,7 @@ import HistoryIcon from '@material-ui/icons/History';
 
 
 
-function PrimarySide() {
+function PrimarySideBar() {
     return (
         <div className='primaryside'>
             <SideBarSection selected Icon={HomeIcon} title='Home'/>
@@ -22,4 +22,4 @@ function PrimarySide() {
     )
 }
 
-export default PrimarySide
+export default PrimarySideBar
