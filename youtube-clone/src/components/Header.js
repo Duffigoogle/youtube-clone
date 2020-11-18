@@ -80,10 +80,12 @@ function Header() {
                             <VideoCall  className='topbar-right_icons icons'/>
                             <Apps  className='topbar-right_icons icons'/>
                             <MoreVert  className='topbar-right_icons icons'/>
-                            <Button className='topbar-right_icons icons'>
-                                <AccountCircle  className='icons'/> 
-                                SIGN IN
-                            </Button>
+                            <a href='https://wwww.google.com' className=''>
+                                <Button className='topbar_btn'>
+                                    <AccountCircle color='primary' className='accnt_icon' /> 
+                                    SIGN IN
+                                </Button>
+                            </a>
                     </div>
         </div>
     )
