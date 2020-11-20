@@ -1,5 +1,5 @@
 // import { Sidebar } from 'semantic-ui-react';
-import './App.css';
+import './App.scss';
 // import TopBar from './components/TopBar';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
@@ -9,8 +9,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Sidebar />
-      <MainGallery />
+      <div className='Main'>
+          <Sidebar />
+          <MainGallery />
+      </div>
+     
     </div>
   );
 }
