@@ -10,7 +10,7 @@ import {FaMusic} from 'react-icons/fa';
 
 
 
-function PrimarySide() {
+function SecondarySideBar() {
     return (
         <div className='secondaryside'>
             <h3> Best of Youtube</h3>
@@ -27,4 +27,4 @@ function PrimarySide() {
     )
 }
 
-export default PrimarySide
+export default SecondarySideBar

@@ -9,17 +9,17 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import TopBarSearch from './TopBarSearch';
 
 
-const Logo = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.xda-developers.com%2Fgoogle-talks-about-youtubes-new-logo-recent-changes-and-future-ideas%2F&psig=AOvVaw2EWKmumx-xbKoviKqtQnqR&ust=1605275288366000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMDWwbSS_ewCFQAAAAAdAAAAABAD';
+// const Logo = 'https://https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg';
 
 const useStyles = makeStyles ({
     menuButton: {
         margin: 10,
     },
     logo : {
-        height: 30,
+        height: 25,
         width: '100%',
         cursor: 'pointer',
-        // object-fit: Contain,
+        // object-fit: 'contain'
     },
     icons: {
         paddingRight: 12,
@@ -48,10 +48,12 @@ const useStyles = makeStyles ({
     // },
     appBar: {
         position: 'sticky',
-        backgroundColor: '#5a5a5a',
+        backgroundColor: '#fff',
         color: 'inherit',
         boxShadow: 'none',
-        font: '14px Roboto, Arial, sans-serif'
+        font: '14px Roboto, Arial, sans-serif',
+        display: 'flex',
+        alignItems: 'center',
 
     }
 });
@@ -73,10 +75,7 @@ function TopBar() {
                                     aria-label='open drawer'>
                             <MenuIcon />
                         </IconButton>
-                    </div>
-                    
-                    <div>
-                        <a href="/" > <img src={Logo} className={classes.logo} alt='logo' /> </a>
+                        <a href="/" > <img src='https://https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg' className={classes.logo} alt='logo' /> </a>
                     </div>
                     
                     <div className='topbar-center'>

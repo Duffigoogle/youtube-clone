@@ -1,0 +1,15 @@
+.main_gallery {
+  flex: 0.8;
+  //   width: 20%;
+  // background-color: skyblue;
+
+  .video_gallery {
+    border-top: 1px solid black;
+    background-color: hotpink;
+  }
+  .tag_gallery {
+    border-top: 1px solid black;
+    background-color: hotpink;
+    height: 56px;
+  }
+}

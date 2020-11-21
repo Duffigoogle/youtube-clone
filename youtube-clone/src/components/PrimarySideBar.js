@@ -13,7 +13,7 @@ function PrimarySideBar() {
         <div className='primaryside'>
             <SideBarSection selected Icon={HomeIcon} title='Home'/>
             <SideBarSection Icon={WhatshotIcon} title='Trending'/>
-            <SideBarSection Icon={SubscriptionsIcon} title='Subscription'/>
+            <SideBarSection Icon={SubscriptionsIcon} title='Subscriptions'/>
             <hr />
             <SideBarSection Icon={VideoLibraryIcon} title='Library'/>
             <SideBarSection Icon={HistoryIcon} title='History'/>
