@@ -81,3 +81,4 @@
 12. What data are you accessing: `Public data`
 13. Click the `What credentials do I need button`
 14. Copy the API key
+15. You are ready to rock 'n' roll.
